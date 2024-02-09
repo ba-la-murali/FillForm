@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography - Me</title>
+    <link rel="stylesheet" href= "style.css" />
+</head>
+<body>
+    <h1>FORM - FILL INFO</h1>
+    <h2>PERSONAL DETAILS</h2>
+
+    <form id="myForm">
+        <ul>
+            <li>Login Details</li>
+            <br>
+            <input type="text" placeholder="Enter your username" id="username">
+            <br><br>
+            <input type="password" placeholder="Enter your password" id="password">
+            <br><br>
+            <li>Year</li>
+            <label for="sy">
+                <input type="radio" value="SY" name="class" id="sy">SY
+            </label>
+            <br>
+            <label for="ty">
+                <input type="radio" value="TY" name="class" id="ty">TY
+            </label><br><br>
+            <li>Skills</li>
+            <label for="java">
+                <input type="checkbox" value="Java" name="skills" id="java">Java
+            </label><br>
+            <label for="cpp">
+                <input type="checkbox" value="C++" name="skills" id="cpp">C++
+            </label><br>
+            <label for="python">
+                <input type="checkbox" value="Python" name="skills" id="python">Python
+            </label><br><br>
+            <li>College</li>
+            <select name="College" id="college">
+                <option value="VIT PUNE">VIT PUNE</option>
+                <option value="VIIT PUNE">VIIT PUNE</option>
+                <option value="VU PUNE">VU PUNE</option>
+            </select>
+            <li>Role</li>
+            <label for="Cloud">
+                <input type="radio" value="Cloud Developer" name="role" id="Cloud">Cloud Developer
+            </label>
+            <br>
+            <label for="Analyst">
+                <input type="radio" value="Data Analyst" name="role" id="Analyst">Data Analyst
+            </label><br>
+            <label for="CyberSec">
+                <input type="radio" value="Cyber Security" name="role" id="CyberSec">Cyber Security
+            </label>
+            <br>
+
+        </ul>
+
+        <input type="button" value="Submit" onclick="saveFormData()">
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
